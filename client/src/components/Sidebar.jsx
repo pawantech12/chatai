@@ -63,14 +63,6 @@ const Sidebar = ({
                 >
                   <div className="flex-grow">
                     <p className="text-sm">{session.title}</p>
-                    {session.messages && session.messages.length > 0 && (
-                      <p className="text-xs text-gray-400">
-                        {session.messages[0].text.length > 20
-                          ? `${session.messages[0].text.substring(0, 20)}...`
-                          : session.messages[0].text}{" "}
-                        {/* Display the first message */}
-                      </p>
-                    )}
                   </div>
                   <button
                     onClick={(e) => {
